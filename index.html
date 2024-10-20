@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <form>
+        <p>Valida número</p>
+        <input id="valor1" placeholder="Digite um número" type="number" required/>
+        <span id="mensagemErro">Este campo aceito somente numero inteiros!</span>
+        <input id="valor2" placeholder="Digite outro número" type="number" required/>
+        <span id="mensagemErro">Este campo aceito somente numero inteiros!</span>
+        <button type="submit">Validar</button>
+        <span id="mensagemSucesso"></span>
+    </form>
+
+    <script src="./main.js"></script>
 </body>
 </html>

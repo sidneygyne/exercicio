@@ -1,0 +1,25 @@
+* {
+    background-color: papayawhip;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 180px;
+}
+
+p{
+    text-align: center;
+}
+
+#mensagemErro{
+    color: brown;
+    display: none;
+}
+
+#mensagemSucesso {
+    background: green;
+    color: white;
+    display: none;
+}
