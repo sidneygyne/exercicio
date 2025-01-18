@@ -1,31 +1,27 @@
 {
-  "devDependencies": {
-    "sass": "^1.83.4"
-  },
-  "name": "exercicio",
+  "name": "gulp",
   "version": "1.0.0",
-  "main": "main.js",
-  "dependencies": {
-    "braces": "^3.0.3",
-    "chokidar": "^4.0.3",
-    "detect-libc": "^1.0.3",
-    "fill-range": "^7.1.1",
-    "immutable": "^5.0.3",
-    "is-extglob": "^2.1.1",
-    "is-glob": "^4.0.3",
-    "is-number": "^7.0.0",
-    "micromatch": "^4.0.8",
-    "node-addon-api": "^7.1.1",
-    "picomatch": "^2.3.1",
-    "readdirp": "^4.1.1",
-    "source-map-js": "^1.2.1",
-    "to-regex-range": "^5.0.1"
-  },
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass source/main.scss build/main.css --watch"
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-debug": "^5.0.1",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-obfuscate": "^0.2.9",
+    "gulp-sass": "^6.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.83.4"
+  },
+  "dependencies": {
+    "imagemin": "^9.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0"
+  }
 }
