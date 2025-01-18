@@ -1,0 +1,1 @@
+let somar=require("./sum"),subtracao=require("./subtraction"),a=100,b=50;console.log("Somar: ",somar(a,b)),console.log("Subtracao: ",subtracao(a,b));
