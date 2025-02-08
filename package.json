@@ -1,28 +1,16 @@
 {
-  "name": "gulp",
+  "name": "less",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp",
+    "less": "less-watch-compiler ./src/styles ./build/styles main.less",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "description": "",
   "devDependencies": {
-    "gulp": "^5.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-debug": "^5.0.1",
-    "gulp-imagemin": "^9.1.0",
-    "gulp-obfuscate": "^0.2.9",
-    "gulp-sass": "^6.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-uglify": "^3.0.2",
-    "sass": "^1.83.4"
-  },
-  "dependencies": {
-    "imagemin": "^9.0.0",
-    "imagemin-mozjpeg": "^10.0.0",
-    "imagemin-pngquant": "^10.0.0"
+    "less": "^4.2.2",
+    "less-watch-compiler": "^1.16.3"
   }
 }
