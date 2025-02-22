@@ -1,115 +1,63 @@
-@import "variaveis.less";
-@import "mapas.less";
-@breakpointMobile: ~"(max-width: 767px)";
-@breakpointTablet: ~"(max-width: 1023px)";
-
-.marginBottom8 {
-  margin-bottom: 8px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", serif;
-}
+@fontPrincipal: Ubuntu, sans-serif;
+@fontTitulo: Lobster, cursive;
+@corDoTexto: #fff;
+@corDeFundo: #eb3b5a;
+@corDoTextoBotao: #000;
+@corDoFundoDoBotao: #f7b731;
 
 body {
-  background-color: @corDeFundo;
-  color: #colors[textColorPrimaria];
+    background-color: @corDeFundo;
+    font-family: @fontPrincipal;
+    color: @corDoTexto;
 }
 
-li {
-  list-style: none;
+h1 {
+    font-family: @fontTitulo;
+    font-size: 3em;
 }
 
-.container {
-  max-width: 1024px;
-  width: 100%;
-  margin: 0 auto;
-
-  // o @media sempre colocar o maior primeiro 1 computador, depois tablet, depois celular
-  @media @breakpointTablet {
-    max-width: 80%;
-  }
-
-  @media @breakpointMobile {
-    max-width: 70%;
-  }
-}
-
-header {
-  background-color: @corFundoHeader;
-  position: sticky;
-  top: 0;
-  left: 0;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 0;
-  }
-}
-
-.menu {
-  display: flex;
-
-  li {
-    font-weight: bold;
-    margin-left: 24px;
-  }
-
-  li a {
-    color: #colors[textColorSecundaria];
-    text-decoration: none;
-  }
-}
-
-section {
-  padding: 56px 0;
-}
-
-.products {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 32.66%);
-  column-gap: 1%;
-  row-gap: 4%;
-  width: 100%;
-
-  @media @breakpointTablet {
-    grid-template-columns: repeat(2, 48.5%);
-    column-gap: 3%;
-  }
-
-  @media @breakpointMobile {
-    display: block;
-  
-}
-
-  &-item {
-    @media @breakpointMobile {
-      display: block;
-    }
-    img {
-      width: 100%;
-      border-radius: 16px;
-    }
-  }
-  
-  &-button {
-    display: block;
-    background-color: @corDosBotoes;
-    color: #colors[textColorSecundaria];
+main {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2em;
     text-align: center;
-    padding: 8px 0;
-    border-radius: 8px;
-    margin-top: 8px;
-    text-decoration: none;
+}
 
-    &:hover {
-      background-color: @corHoverBotoes;
+button {
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 16px;
+    border-radius: 8px;
+    background-color: @corDoFundoDoBotao;
+    color: @corDoTextoBotao;
+    font-family: @fontPrincipal;
+}
+
+input {
+    display: block;
+    margin: 16px auto 0;
+    font-size: 2em;
+    max-width: 120px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: #fff;
+    border-bottom: 6px solid #fff;
+
+}
+
+.resultado {
+    display: none;
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted #fff;
+
+    span {
+        font-weight: bold;
+        font-size: 3em;
+        display: block;
     }
-  }
 }
