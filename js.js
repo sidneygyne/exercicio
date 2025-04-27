@@ -1,22 +1,22 @@
- function Pessoa (nome, sobrenome) {
-    this.nome = nome;
-    this.sobrenome = sobrenome;
- }
+const listaAlunosComNota = [
+    { nome: "Ana", nota: 8 },
+    { nome: "Bruno", nota: 6 },
+    { nome: "Carla", nota: 9 },
+    { nome: "Diego", nota: 4 },
+    { nome: "Elisa", nota: 10 },
+    { nome: "Fábio", nota: 7 },
+    { nome: "Gabriela", nota: 5 },
+    { nome: "Henrique", nota: 3 },
+    { nome: "Isabela", nota: 9 },
+    { nome: "João", nota: 2 }
+  ];
 
-function Veiculo (marca, modelo, anoModelo, anoFabricação, valorVenda) {
-    this.marca = marca;
-    this.modelo = modelo;
-    this.anoModelo = anoModelo;
-    this.anoFabricação = anoFabricação;
-    this.valorVenda = valorVenda;
+console.log(listaAlunosComNota);
 
-    Pessoa.call(this, nome, sobrenome)
-}
+// const alunosAprovados = listaAlunosComNota.filter(function(aluno) {
+//     return aluno.nota >= 6
+// })
+// ou
+const alunosAprovados = listaAlunosComNota.filter((aluno) => aluno.nota >= 6);
 
-const veiculoSidney = new Veiculo("FORD", "Ka", 2025, 2025, 70000.00, "Sidney", "Magalhães");
-const veiculoLuis = new Veiculo("VW", "Polo", 2024, 2023, 65000.00, "Luis", "Souza");
-const veiculoAna = new Veiculo("Chevrolet", "Onix", 2023, 2022, 68000.00, "Ana", "Silva");
-
-console.log(veiculoSidney);
-console.log(veiculoLuis);
-console.log(veiculoAna);
+console.log(alunosAprovados);
