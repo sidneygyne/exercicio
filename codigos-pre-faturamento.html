@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tec Info</title>
+
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<body>
+
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg navbar-dark navbar-custom flex-column">
+            <div class="flex-column">
+                <!-- <h1 class="site-title text-white">
+                    <a href="#" class="text-decoration-none text-white">TEC INFO</a>
+                </h1> -->
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav class="collapse navbar-collapse" id="menu">
+
+                    <ul class="nav navbar-nav nav-pills ms-auto d-flex flex-wrap">
+                        <!-- <h1>Procedimentos</h1> -->
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link destaque">INICIAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/prefaturamento.html" class="nav-link">Pré-Faturamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#rotinas" class="nav-link active">Rotinas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#obs" class="nav-link">Observaçoes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#codigos" class="nav-link">Códigos</a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- div responsavel por deixar o item do menu ativo -->
+        <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true" class="container">
+
+            <div class="processos" id="rotinas">
+                <h2>Rotinas Wintor</h2>
+
+                <div class="processo">
+                    <h3>Rotinas</h3>
+                    <ul>
+                        <li>9703 - Cadastro do cliente</li>
+                        <li>1203 - Extrato do cliente </li>
+                        <li>1214 - Inserir mensagens</li>
+                        <li>1220 - Relatorio de baixas</li>
+                        <li>1502 - Processar baixa arquivo banco</li>
+                        <li>1207 - Baixa de título manual</li>
+                        <li>604 - Fazer conciliação</li>
+                        <li>589 - Cadastrar dias uteis por filial</li>
+                        <li>309 - Cadastrar dias uteis de venda (conferência)</li>
+                        <li>111 - Faturamento Geral</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="processos" id="obs">
+                <h2>Observações</h2>
+
+                <div class="processo">
+                    <h3>Observações</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="processos" id="codigos">
+                    <h2>Códigos</h2>
+
+
+                    <div class="processo">
+                        <h3>Setup - Guia produtos - </h3>
+                        <ul>
+                            <li>100024 - SERVICO: ASSESSORIA PERSONALIZADA VIA CONSULTOR</li>
+                            <li>10000 - SETUP- ATIVACAO E TREINAMENTO- SAAS - MAXPEDIDO</li>
+                            <li>4803 - SETUP- ATIVACAO E TREINAMENTO- SAAS - MAXPROMOTOR</li>
+                            <li>4906 - SETUP- ATIVACAO E TREINAMENTO- SAAS - MAXMOTORISTA</li>
+                            <li>4907 - SETUP- ATIVACAO E TREINAMENTO- SAAS - MAXROTEIRIZADOR</li>
+                            <li>10050 - SETUP- ATIVACAO E TREINAMENTO- SAAS - MAXPAG</li>
+                            <li>10064 - SETUP- ATIVACAO E TREINAMENTO- SAAS - TA EM ROTA PRO</li>
+                            <li>10071 - ATIVACAO E TREINAMENTO - SAAS - MAXINSIGHTS PRO</li>
+                            <li>500011 - TREINAMENTO E IMPLANTACAO MAXINSIGHT</li>
+                            <li>10073 - ATIVAÇÃO E TREINAMENTO - SAAS - MAXINSIGHTS STARTER</li>
+                            <li>9050 - SETUP- ATIVACAO E TREINAMENTO- SAAS - MAXPRONTAENTREGA</li>
+                            <li>8024 - SETUP- ATIVACAO E TREINAMENTO- SAAS - MAXGESTAO PRO</li>
+                            <li>8032 - SETUP- ATIVACAO E TREINAMENTO- SAAS - MAXGESTAO PLUS</li>
+                            <li>10067 - SETUP- ATIVACAO E TREINAMENTO- SAAS - MAXPESQUISA</li>
+                            <li>8030 - IMPLANTAÇÃO MAXGESTAO PRO</li>
+                            <li>10070 - INSTALACAO EXTRATOR</li>
+                            <br />
+                            <li>9015 - USUARIO ADICIONAL - PEDIDO DE VENDA</li>
+                            <br />
+                            <li>10002 - TREINAMENTO - MAXPEDIDO</li>
+                            <li>4909 - TREINAMENTO - MAXROTEIRIZADOR CLOUD</li>
+                            <li>100029 - TREINAMENTO OPERACIONAL</li>
+                            <li>100028 - TREINAMENTO PARA USUARIO CHAVE</li>
+                            <li>100027 - TREINAMENTO COLETIVO</li>
+                            <br />
+                            <li>10004 - HORAS DE CUSTOMIZACAO - MAXPEDIDO</li>
+                            <li>9019 - HORAS DE CUSTOMIZACAO - PEDIDO DE VENDA</li>
+                            <li>1024 - HORAS DE CUSTOMIZACAO PORTAL EXECUTIVO</li>
+                            <li>100034 - HORAS DE CUSTOMIZACAO</li>
+
+                            <br />
+                            <li>4932 - REINSTALACAO MAXPROMOTOR CLOUD</li>
+                            <li>4211 - REINSTALACAO - MAXROTEIRIZAD OR CLOUD</li>
+                            <li>8028 - REINSTALACAO - MAXGESTAO PRO CLOUD</li>
+                            <li>10059 - REINSTALACAO - MAXGESTAO PLUS CLOUD</li>
+                            <li>4210 - REINSTALACAO - MAXMOTORISTA CLOUD</li>
+                            <li>10007 - REINSTALACAO - MAXPEDIDO CLOUD</li>
+                            <li>10057 - REINSTALACAO MAXPAG</li>
+                            <li>9020 - REINSTALACAO - PEDIDO DE VENDA</li>
+                            <li>88005 - REINSTALACAO - PORTAL EXECUTIVO</li>
+                            <li>100025 - REINSTALACAO - TA EM ROTA</li>
+                            <li>10075 - REINSTALACAO - MAXINSIGHTS</li>
+                        </ul>
+                    </div>
+
+                    <div class="processo">
+                        <h3>Licença - Lançamento de contrato mensal - Suporte</h3>
+                        <ul>
+                            <li>10001 - LICENCA DE USO MENSAL - MAXPEDIDO CLOUD</li>
+                            <li>4804 - LICENCA DE USO MENSAL - MAXPROMOTOR CLOUD</li>
+                            <li>4910 - LICENCA DE USO MENSAL - MAXMOTORISTA CLOUD</li>
+                            <li>4911 - LICENCA DE USO MENSAL - MAXROTEIRIZADOR CLOUD</li>
+                            <li>10054 - LICENCA DE USO MENSAL - MAXPAG CLOUD</li>
+                            <li>10066 - LICENCA DE USO MENSAL - TA EM ROTA PRO</li>
+                            <li>8025 - LICENCA DE USO MENSAL - MAXGESTAO PRO CLOUD</li>
+                            <li>10072 - LICENÇA DE USO MENSAL - MAXINSIGHTS PRO</li>
+                            <li>500010 - LICENÇA DE USO MENSAL MAXINSIGHT </li>
+                            <li>9051 - LICENÇA DE USO MENSAL - MAXPRONTAENTREGA </li>
+                            <li>10069 - LICENCA DE USO MENSAL EXTRATOR</li>
+                            <li>8033 - LICENCA DE USO MENSAL - MAXGESTAO PLUS CLOUD </li>
+                            <li>8034 - MENSALIDADE DO ROTEIRIZADOR DE VENDEDORES RCA - CLOUD</li>
+                            <li>8027 - UPGRADE - LICENCA DE USO MENSAL MAXGESTAO PLUS CLOUD</li>
+                            <li>10068 - LICENÇA DE USO MENSAL - MAXPESQUISA - CLOUD</li>
+                            <li>9016 - LICENÇA DE USO MENSAL - PEDIDO DE VENDA</li>
+
+                        </ul>
+                    </div>
+
+                    <h1 class="destaque">Tecnico 1 a 3 Colocar - Participante: CC, Demo, Parceiros, 100% - Em atualização abaixo, atenção</h1>
+
+                    <div class="processo">
+                        <h3>Insides</h3>
+                        <ul>
+                            <li>564 - CAMILA FERREIRA MARQUES - INSIDE</li>
+                            <li>869 - JOAO TAVARES - INSIDE</li>
+                            <li>558 - ALINE GOMES - INSIDE</li>
+                            <li>755 - NATHALIA GONÇALVES - INSIDE</li>
+                            <li>576 - VANESSA BORGES - INSIDE</li>
+                            <li>268 - WESLEY SILVA - INSIDE</li>
+                            <li>920 - PEDRO LUSTOSA - INSIDE</li>
+                            <li>946 - JESSE FIGUEIRA - INSIDE</li>
+
+                        </ul>
+                    </div>
+
+                    <!-- <div class="processo">
+                        <h3>C.C - Numerador 11 - Tenico 2</h3>
+                        <ul>
+                            <li>883 -LARISSA LIMA - C.C</li>
+                            <li>882 - JOSE ROBERTO VITOR FILHO - C.C</li>
+                            <li>879 - ADRIANA SANTANA - C.C</li>
+                            <li>893 - NATALIA RATACHESKI - C.C</li>
+                            <li>896 - BIANCA SILVA - C.C</li>
+                            <li>892 - GABRIELLY ALVES - C.C</li>
+                            <li>897 - ANNA SILVA - C.C</li>
+                            <li>889 - CAMILA LEAL SILVA - C.C</li>
+                            <li>877 - SARAH SILVA - C.C.</li>
+                        </ul>
+                    </div>
+ -->
+                    <div class="processo">
+                        <h3>Inbound (antigo SDR) - Numerador 9 - Dem. Técnico 1</h3>
+                        <ul>
+                            <li>906 - KAROLINNY FERNANDES - INBOUND - Dem. Técnico 1</li>
+                            <li>908 - BIANCA BARREIRA - INBOUND - Dem. Técnico 1</li>
+                            <li>912 - GABRIELA MARTINS - INBOUND</li>
+                            <li>902 - GABRIELA SANTOS - INBOUND</li>
+                            <li>932 - NATALIA RATACHESKI - INBOUND</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="processo">
+                        <h3>Outbound (antigo BDR) - Numerador 9 - Dem. Técnico 1</h3>
+                        <ul>
+                            <li>900 - GABRIELA MARTINS - OUTBOUND</li>
+                            <li>901 - GABRIELA SANTOS - OUTBOUND</li>
+                            <li>898 - ANA LAURA GLIENKA - OUTBOUND</li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="processo">
+                        <h3>DEMO - Dem. Técnico 3 (Numerador 12)</h3>
+                        <ul>
+                            <li>832 - JOSE VITOR SILVA - DEMO - Dem. Técnico 3</li>
+                            <li>885 - JESSE FIGUEIRA - DEMO - Dem. Técnico 3</li>
+                            <li>724 - ALISSON SOUSA - DEMO - Dem. Técnico 3 (Numerador 12)</li>
+                            <li>572 - THIAGO OLIVEIRA DE PAULA - Dem. TECNICO</li>
+                            <li>655 - JEFFERSON RODRIGUES - DEMONSTRADOR</li>
+                            <li></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="processo">
+                    <h3>PARCEIRO</h3>
+                    <ul>
+                        <li>794 - DEIVISSON DAMASCENO - PARCEIRO - Dem. Técnico 3</li>
+                        <li>904 - ELIANE MARIA MATIAS</li>
+                        <li>907 - MARCOS V VAZ DE ALMEIDA - PARCEIRo</li>
+                        <li>936 - WANDERSON PRADO (INKO TECN) - PARCEIRO - Dem. Técnico 2</li>
+                        <li>894 - EDUARDO HENRIQUE ROCHA - PARCEIRO</li>
+                        <li>942 - DANIEL A. ASSIS BARBOSA - PARCEIRO</li>
+                        <li>945 - FABRÍCIO DA COSTA - PARCEIRO - (Cliente - Modelo Comércio Atacadista)</li>
+                        <li>749 - SOLIDCON BARRA INFORMATICA - PARCEIRO</li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                                <div class="processo">
+                    <h3>Capacitação - Numerador 1 - Ger. Negócio</h3>
+                    <ul>
+                        <li>909 - WESLEY SILVA - CAPACITAÇÃO</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+
+                <div class="processo">
+                    <h3>100% Máxima - Numerador 11 ou 12 - Dem. Técnico 1 ou 3</h3>
+                    <ul>
+                        <li>710 - JOSE ROBERTO VITOR FILHO - 100% MAXIMA</li>
+                        <li>614 - ADRIANA SANTANA - 100% MAXIMA</li>
+                        <li>242 - LURIA PEREIRA - 100% MAXIMA</li>
+                        <li>789 - CAMILA LEAL SILVA - 100% MAXIMA</li>
+                        <li>766 - ANNA PAULA SILVA - 100% MAXIMA</li>
+                        <li>935 - ANA PAULA FRANCA - 100% MAXIMA</li>
+                        <li>933 - SARAH SILVA - 100% MAXIMA</li>
+                        <li>927 - GABRIELLY ALVES - 100% MAXIMA</li>
+                        <li>944 - ANGELITA P R SANTANA - 100% MAXIMA</li>
+                        <li>939 - AGNES LAURENTINO - 100% MAXIMA</li>
+                        <li>918 - RONAN JÚNIOR - 100% MAXIMA</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="processos" id="">
+                <h2>teste</h2>
+
+
+                <div class="processo">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                2024 &copy, MAXIMA TECH - Todos os direitos reservados. Desenvolvido por Sidney Rodrigues Magalhães
+            </p>
+        </div>
+    </footer>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./js/image-card.js"></script>
+    <script src="./js/copiar.js"></script>
+</body>
+
+</html>

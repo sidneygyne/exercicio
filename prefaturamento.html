@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tec Info</title>
+
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<body>
+
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg navbar-dark navbar-custom flex-column">
+            <div class="flex-column">
+                <!-- <h1 class="site-title text-white">
+                    <a href="#" class="text-decoration-none text-white">TEC INFO</a>
+                </h1> -->
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav nav-pills ms-auto d-flex flex-wrap">
+                        <!-- <h1>Procedimentos</h1> -->
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link destaque">INICIAL</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#pre-faturamento-treinamento" class="nav-link">Treinamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pre-faturamento-cdu" class="nav-link">CDU-Usuário adicional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pre-faturamento-base" class="nav-link">Cliente Base</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pre-faturamento-cli-novo" class="nav-link">Cliente Novo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pre-faturamento-troca-cnpj" class="nav-link">Troca CNPJ</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#" class="nav-link"></a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="/puca.html" class="nav-link">Puca</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- div responsavel por deixar o item do menu ativo -->
+        <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true" class="container">
+
+
+            <div class="processos" id="pre-faturamento-treinamento">
+                <h2>Pré Faturamento – Treinamento normal e bonificado. Reinstalação</h2>
+
+
+                <div class="processo">
+                    <h3>Hubspot - Baixar proposta</h3>
+                    <ul>
+                        <li>Baixar proposta</li>
+                        <li>Conferir proposta</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>9703 - Preencher aba de produtos conforme proposta</h3>
+                    <ul>
+                        <li>Pesquisar cliente pelo CNPJ</li>
+                        <li>Guia produtos</li>
+                        <li>Exclui tudo</li>
+                        <li>Inserir o novo produto conforme proposta</li>
+                        <ul>
+                            <li>Situação: Bonificado ou Faturamento</li>
+                            <li>Serviço conforme proposta</li>
+                            <li>Implantação: quase sempre não, coloca sempre sim quando tiver implantação na proposta
+                            </li>
+                        </ul>
+
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>9703 - Fazer a ficha de faturamento</h3>
+                    <ul>
+                        <li>Guia Contatos – Verifica se responsável está cadastrado, se não cadastrar</li>
+                        <ul>
+                            <li>Nome do responsável pela compra: ver proposta</li>
+                            <li>Cargo: Geralmente – TI</li>
+                            <li>Tipo de contato: 5</li>
+                            <li class="destaque">Tipo de contato: 8 - Para recebimentos de boletos</li>
+                            <li>Salva e entra novamente</li>
+                        </ul>
+                        <li>Guia pre faturamento</li>
+                        <ul>
+                            <li>Guia comissão: conforme regras</li>
+                            <li>Incluir</li>
+                            <li>Responsável pela venda: ver proposta</li>
+                            <li>Responsável pela compra – ver proposta</li>
+                            <li>Data da venda: data do dia que esta fazendo o pré-faturamento</li>
+                            <li>Ver se e Bonificado ou Faturado</li>
+                            <ul>
+                                <li>Quando bonificado</li>
+                                <ul>
+                                    <li>Guia Produto</li>
+                                    <li>Insere o produto: </li>
+                                    <li>Quantidade de horas</li>
+                                    <li>Valor R$ 0,00 pois é bonificado</li>
+                                    <li>Inserir observação do contrato</li>
+                                    <li>Visualizar – para conferir tudo</li>
+                                    <li>Salva</li>
+                                </ul>
+                                <li>Quando não bonificado</li>
+                                <ul>
+                                    <li>Guia Produto</li>
+                                    <li>Insere o produto: </li>
+                                    <li>Quantidade de horas</li>
+                                    <li>Valor</li>
+                                    <li>Inserir observação do contrato</li>
+                                    <li>Guia comissão: conforme regras</li>
+                                    <li>Guia Pagamento: lançar números de parcela, valor total, e data do 1º pagamento
+                                    </li>
+                                    <li>Visualizar – para conferir tudo</li>
+                                    <li>Salvar </li>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Salvar ficha de Faturamento, Implantação e proposta</h3>
+                    <ul>
+                        <li>Pasta
+                            <ul>
+                                <li>Faturamento: treinamento, CDU, customização - VER</li>
+                            </ul>
+                        </li>
+                        <li>Criar pasta com código e nome do cliente </li>
+                        <li>Salvar ficha de implantação
+                            <ul>
+                                <li>Guia Pre faturamento</li>
+                                <li>Icone impressora abaixo do lado de salvar</li>
+                                <li>Imprimir ficha de implantação</li>
+                                <li>Salvar na pasta Z:\Administrativo\FATURAMENTO Criar </li>
+                            </ul>
+                        </li>
+                        <li>Salvar ficha de Faturamento
+                            <ul>
+                                <li>Guia Pre faturamento</li>
+                                <li>Icone da impressora da esquerda</li>
+                                <li>Salvar na pasta Z:\Administrativo\FATURAMENTO Criar </li>
+                            </ul>
+                        </li>
+                        <li>Salvar proposta</li>
+                        <li>Ao salvar os arquivos na pasta do cliente, colocar nome conforme exemplo:
+                            <ul>
+                                <li>Exemplo: 03268 - 2024 12 30 – Implantação (Código – Data em inglês – Implantação)
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="processo">
+                    <h3>Colocar na pasta de clientes</h3>
+                    <ul>
+                        <li>Copiar ficha de faturamento e proposta para a pasta : Z:\Comercial-Adm\007 - Controle de
+                            clientes\001 - Arquivo Digital - Clientes Máxima
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Colocar no drive</h3>
+                    <ul>
+                        <li>Drive: Faturamento Máxima</li>
+                        <li>Cria pasta com código e nome do cliente</li>
+                        <li>Copia Ficha de faturamento e Proposta e colar na pasta que criou</li>
+                    </ul>
+                    <ul class="links-botoes">
+                        <a target="_blank"
+                            href="https://maximasistemas.sharepoint.com/sites/GA-AdministrativoFinanceiro/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FGA%2DAdministrativoFinanceiro%2FDocumentos%20Compartilhados%2FFaturamento%20Maxima&viewid=bd743005%2Da8bf%2D4e55%2Dbda2%2Dcd077e329eed">Faturamento
+                            Máxima</a>
+                    </ul>
+                </div>
+
+
+                <div class="processo">
+                    <h3>Subir ficha no Hubspot com os dados</h3>
+                    <ul>
+                        <li>Clica no ícone de quadrado com ponto de exclamação</li>
+                        <li>Em observação marcar @Fabyanna Almeida e inserir mascara conforme modelo abaixo:
+                        <li>Obs: da Máscara: Colar primeiro no bloco de notas para depois copiar e colocar no nectar
+                        </li>
+                        <textarea readonly id="7" rows="7" class="output-texto">
+                                    Segue ficha de implantação
+                                    
+                                    1134 - STO ATACADISTA DE ALIMENTOS EIRELI
+
+
+                                    Hora de customização Pedido de Venda 40  horas R$ 8.000,00
+
+
+                                    ERP: WINTHOR
+
+                                    Inside: 
+
+                                    Responsável: Vinicius Faria  - vinicius.faria@stoatacadista.com.br / 61 9644-3738
+
+                                    Motivo: PEDIDO-53571 - BAR CODE NO APK.
+                                    </textarea>
+                        <button onclick="copiar('7')" class="botao_ação">Copiar</button>
+                        </li>
+
+                        <li>Insere ficha e implantação</li>
+                        <li>Enviar</li>
+                        <li>Na sessão Pre-faturamento: Move card para ganho com a mensagem Ganha - Treinamento</li>
+
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Preencher planilhas</h3>
+                    <ul>
+                        <li class="destaque">Quando o vendedor for Ana Paula, na planilha colocar vendedor Financeiro
+                        </li>
+                        <li class="destaque">Quando Treinamento ou capacitação, na colula Tipo de produto: Capacitação
+                        </li>
+                        <br>
+                        <li class="links-botoes">
+                            <a target="_blank"
+                                href="https://maximasistemas.sharepoint.com/:x:/r/sites/GA-AdministrativoFinanceiro/_layouts/15/Doc.aspx?sourcedoc=%7BD2E63EBC-678C-471B-9D8E-B811FE3B60C3%7D&file=PLANILHA%20VENDAS%202025.xlsx&action=default&mobileredirect=true">Planlilha
+                                vendas 2025</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="processos" id="pre-faturamento-cdu">
+                <h2>Pré Faturamento – CDU – usuário adicional</h2>
+
+                <div class="processo">
+                    <h3>Hubspot- Baixar proposta</h3>
+                    <ul>
+                        <li>Oportunidade</li>
+                        <li>Ícone dos clips</li>
+                        <li>Baixar proposta</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>9703 - Lançamento de contrato mensal e chave</h3>
+                    <ul>
+                        <li>Pesquisar cliente pelo CNPJ</li>
+                        <li>Guia produtos - Tipo Pontual
+                            <ul>
+                                <li>Não precisa preencher</li>
+                            </ul>
+                        </li>
+
+                        <li>Guia lançamento de contrato mensal: inserir nova licenças igual quando vai fazer a adição de
+                            licenças de produtos onprices
+                            <ul>
+                                <li>Produto, valor da mensalidade, vencimento, </li>
+                                <li>Data de início do faturamento: de acordo com proposta</li>
+                                <li>Recorrente: sim</li>
+                                <li>Pag comissão: não</li>
+                                <li>Data final contrato: + 1 ano da data inicio faturamento</li>
+                                <li>Qtd de usuários</li>
+                                <li>Tipo: anual</li>
+                                <li>Data base: data do dia da inclusão da licença</li>
+                                <li>Tipo de índice: colocar conforme proposta, ver proposta se tiver mais de um deixar
+                                    em branco</li>
+                            </ul>
+                        </li>
+
+                        <li>Na aba instalações ajustar quantidade de licenças</li>
+                    </ul>
+
+                </div>
+
+                <div class="processo">
+                    <h3>9703 - Fazer a ficha de faturamento</h3>
+                    <ul>
+                        <li>Guia Contatos – Verifica se responsável está cadastrado, se não cadastrar</li>
+                        <ul>
+                            <li>Nome do responsável pela compra: ver proposta</li>
+                            <li>Cargo: Geralmente – TI</li>
+                            <li>Tipo de contato: 5</li>
+                            <li class="destaque">Tipo de contato: 8 - Para recebimentos de boletos</li>
+                            <li>Salva e entra novamente</li>
+                        </ul>
+                        <li>Guia pré faturamento</li>
+                        <ul>
+                            <li>Incluir</li>
+                            <li>Responsável pela venda – conforme proposta – (nome + Inside)</li>
+                            <li>Responsável pela compra – ver proposta</li>
+                            <li>Data da venda: data do dia que está fazendo o Pré-faturamento</li>
+                            <li>Guia Produto: Insere o produto: somente Usuários adicionais</li>
+                            <li>Guia Suporte: Insere o produto: somente Licença de usuário mensal</li>
+                            <li>Guia Comissão: Gerente de negócio inserir vendedor da proposta com percentual sempre 5%
+                            </li>
+                            <li>o Guia pagamento: somente usuários adicionais conforme proposta (obs não gerar da
+                                mensalidade nessa guia)</li>
+                            <li>Mascara exemplo da observação: </li>
+                            <ul>
+                                <li class="destaque">colocar no 1214 tambem </li>
+                                <li>Ex: Portal Executivo: 8 usu. R$ 1095,74 + 1 usu. R$ 120,00 = 9 usu. R$ 1215,74
+                                    (135,08/usu)</li>
+                            </ul>
+                            <li>Visualizar – para conferir tudo</li>
+                            <li>Salvar</li>
+                        </ul>
+                        <li>Imprimir ficha de Faturamento e salvar na pasta faturamento</li>
+                        <ul>
+                            <li>Guia Pre faturamento</li>
+                            <li>Icone impressora lado esquerdo</li>
+                            <li>Salvar na pasta Faturamento/Faturamento</li>
+                            <li>Criar pasta com código e nome do cliente</li>
+                            <li>Ao salvar o arquivo na pasta do cliente, colocar nome conforme exemplo:</li>
+                            <li>Exemplo: 03268 - 2024 12 30 – Implantação (Código – Data em inglês – Implantação)
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Salvar proposta</h3>
+                </div>
+
+                <div class="processo">
+                    <h3>Colocar no drive</h3>
+                    <ul>
+                        <li>Drive: Faturamento Máxima</li>
+                        <li>Cria pasta com código e nome do cliente</li>
+                        <li>Copia Ficha de faturamento e Proposta e colar na pasta que criou</li>
+                    </ul>
+                    <ul class="links-botoes">
+                        <a target="_blank"
+                            href="https://maximasistemas.sharepoint.com/sites/GA-AdministrativoFinanceiro/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FGA%2DAdministrativoFinanceiro%2FDocumentos%20Compartilhados%2FFaturamento%20Maxima&viewid=bd743005%2Da8bf%2D4e55%2Dbda2%2Dcd077e329eed">Faturamento
+                            Máxima</a>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Colocar na pasta de clientes</h3>
+                    <ul>
+                        <li>Copiar ficha de faturamento e proposta para a pasta : Z:\Comercial-Adm\007 - Controle de
+                            clientes\001 - Arquivo Digital - Clientes Máxima</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>No nectar</h3>
+                    <ul>
+                        <li>Mover card para aba de CDU </li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Preencher planilhas</h3>
+                    <ul>
+                        <li class="destaque">Acessar Planilhas de controle - Comissão / Chave / SMS
+                            <ul>
+                                <li>NÃO PREENCHER</li>
+
+                            </ul>
+                        </li>
+                        <li>Acessar Planilhas vendas
+                            <ul>
+                                <li class="links-botoes">
+                                    <a target="_blank"
+                                        href="https://maximasistemas.sharepoint.com/:x:/r/sites/GA-AdministrativoFinanceiro/_layouts/15/Doc.aspx?sourcedoc=%7BD2E63EBC-678C-471B-9D8E-B811FE3B60C3%7D&file=PLANILHA%20VENDAS%202025.xlsx&action=default&mobileredirect=true">Planlilha
+                                        vendas 2025</a>
+                                </li>
+                                <li>Data da venda</li>
+                                <li>Data do faturamento</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="processos" id="pre-faturamento-base">
+                <h2>Pré Faturamento - Base</h2>
+
+                <div class="processo">
+                    <h3>Hubspot: baixar proposta e verificar formulário</h3>
+                    <ul>
+                        <li>Oportunidades</li>
+                        <li>Pré-Faturamento</li>
+                        <li>Começa pelo último</li>
+                        <li>Clicar 2 vezes par abrir</li>
+                        <li>Clica no clipe para abrir a proposta</li>
+                        <li>Baixa a proposta</li>
+                        <li>Confere os valores lançados, se está assinado (máxima e cliente), copia o cnpj, tem o Cnpj,
+                            prazo de prestação de serviços (item 2)</li>
+                    </ul>
+                </div>
+
+
+                <div class="processo">
+                    <h3>9703</h3>
+                    <ul>
+                        <li>
+                            <a class="codigo" target="_blank" href="/codigos-pre-faturamento.html#codigos">
+                                Acessar página de códigos</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>Busca o cliente </li>
+                        <li>Após cliente cadastrado ou base
+                            <ul>
+                                <li>Guia produtos - Tipo Pontual
+                                    <ul>
+                                        <li>Exclui tudo</li>
+                                        <li>Produto: Colocar conforme proposta</li>
+                                        <li>
+                                            <ul>
+                                                <li>4803 - SETUP- ATIVACAO E TREINAMENTO- SAAS - MAXPROMOTOR</li>
+                                                <li>100024 - SERVICO: ASSESSORIA PERSONALIZADA VIA CONSULTOR</li>
+                                            </ul>
+                                        </li>
+                                        <li>Situação: Faturamento ou Bonificado</li>
+                                        <li>Serviço: ver proposta
+                                            <ul>
+                                                <li>Setup: Implantação</li>
+                                                <li>Serviço de assessoria: Implantação</li>
+                                            </ul>
+                                        </li>
+                                        <li>Implantação: Sim para os casos já listados acima</li>
+                                        <li>Incluir</li>
+                                        <li>Obs:</li>
+                                    </ul>
+                                </li>
+                                <li>Guia de Lançamento de contrato mensal
+                                    <ul>
+                                        <li>Seleciona produto</li>
+                                        <li>Valor mensalidade</li>
+                                        <li>Dia de vencimento</li>
+                                        <li>Data de início – próximo faturamento – ver proposta</li>
+                                        <li>Recorrente: sim</li>
+                                        <li class="destaque">Paga comissão: sim</li>
+                                        <li>Data final: +1 ano – verificar na proposta se é 1 ano</li>
+                                        <li>RCA: Vendedor</li>
+                                        <li>Comissão:
+                                            <ul>100%: proposta de 12 meses</ul>
+                                            <ul>50%: proposta de 6 meses</ul>
+                                        </li>
+                                        <li>Quantidade de usuários
+                                        <li>Tipo de contrato: geralmente anual - verificar na proposta se é 1 ano</li>
+                                        <li>Incluir</li>
+                                        <li class="destaque">Marca o campo suspenso</li>
+                                        <li>Salvar</li>
+                                    </ul>
+                                </li>
+                                <li>Guia Contatos – Verifica se responsável está cadastrado, se não cadastrar
+                                    <ul>
+                                        <li>Nome do responsável pela compra: ver proposta</li>
+                                        <li>Cargo: Geralmente – TI</li>
+                                        <li>Tipo de contato: 5</li>
+                                        <li class="destaque">Tipo de contato: 8 - Para recebimentos de boletos</li>
+                                        <li>Salva e entra novamente</li>
+                                    </ul>
+                                </li>
+                                <li>Guia Pré-Faturamento
+                                    <ul>
+                                        <li>Incluir</li>
+                                        <li>Responsável pela venda – conforme proposta – (nome + Inside)</li>
+                                        <li>Responsável pela compra – ver proposta</li>
+                                        <li>Data da venda: data do dia que está fazendo o Pré-faturamento</li>
+                                        <li>Guia Produto: Insere o produto: pontual
+                                            <ul>
+                                                <li>Obs: Sempre que tiver migração lançar como setup
+                                                    <ul>
+                                                        Ex: proposta Migração - Setup - Ativação e Treinamento - SaaS –
+                                                        maxPedido
+                                                        Na Guia produtos pre faturamento: SETUP – ATIVAÇÃO E TREINAMENTO
+                                                        SASS –
+                                                        NOME
+                                                        DO PRODUTO
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Guia Suporte: Insere o produto: somente Licença de usuário mensal
+                                            <ul>
+                                                <li>Vencimento de acordo com próximo faturamento ou como na proposta
+                                                </li>
+                                                <li>o Obs: Sempre que tiver migração lançar o nome do produto normal
+                                                    <ul>
+                                                        <li>Ex: proposta Migração - Licença de uso mensal maxPedido
+                                                            Cloud
+                                                            Na Guia Suporte pre faturamento: Licença de uso mensal
+                                                            MaxPedido
+                                                            Cloud
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>Guia Comissão:
+                                            <ul>
+                                                <li>Gerente de negócio: inserir vendedor da proposta
+                                                    <ul>5% quando não tiver demonstrador</ul>
+                                                    <ul>3,5% quando tiver demonstrador</ul>
+                                                    <ul>5% quando for usuarios adicionais</ul>
+                                                </li>
+                                                <li>No Hubspotolhar a validação nos campos da laterar esquerda</li>
+                                                <li>Demonstrador: 2% (NOME + DEMO)</li>
+                                                <li>Parceiro: 15%</li>
+                                                <li>Apoio técnico: 1%</li>
+                                                <li>100% Máxima: 1,5% - Base // 3% - Novo  // 1% - Capacitação/treinamento</li>
+                                                <li>Inbound: 1,5%</li>
+                                                <li>Outbound: 2,5%</li>
+                                                <li>Closer: 2%</li>
+                                                <li>Origem CustomerCare - CC: 2,5%</li>
+                                                <li>Ana Paula - 1,5%</li>
+                                                <li>Indicação - Indicação Interna - Inside Sales - Participante - 2%</li>
+                                            </ul>
+                                        </li>
+                                        <li>Rotina 517 para verificar os participantes da venda
+                                            <ul>
+                                                <li>RCA – para pesquisar</li>
+                                                <li>Guia Resultado de pesquisa
+                                                    <ul>
+                                                        <li>clica em código rca para classificar e ver o próximo código
+                                                            de cadastro
+                                                        </li>
+                                                        <li>Pesquisa um semelhante primeiro. Ex: Parceiro, demo, ou
+                                                            Máxima 100%.
+                                                            Verifica na Guia Numeradores o número no campo Próximo Cod
+                                                            Cli</li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>Incluir: nome, cpf, rg, marca pessoa física, supervisor sempre 3,
+                                                    dados bancário
+                                                    quando parceiro, guia numeradores conforme consultado anteriormente,
+                                                    guia
+                                                    vendas/comissões: tipo de venda sempre interna. INSS sempre 0.</li>
+                                                <li>Quando tiver cadastro em uma categoria, ir no cadastro e pegar nome,
+                                                    cpf e rg
+                                                    para novo cadastro</li>
+                                                <li>Inserir registro: supervisor sempre 3</li>
+                                                <li>Guia numeradores preencher ultimo campo – 10 – Verificar cadastro
+                                                    semelhante da
+                                                    mesma categoria para ver numero a preench</li>
+                                                <li>Venda Interna
+                                            </ul>
+                                        </li>
+                                        <li>Guia pagamento: tipo pontual</li>
+                                        <li>Insere observação da proposta.
+                                            <ul>
+                                                <li>Quando Upgrade: Upgrade MaxPedido - Sem diferença de mensalidade
+                                                </li>
+                                                <li>Se for proposta de prazo de 6 meses inserir tambem: Proposta com
+                                                    validade de 06
+                                                    meses.
+                                                </li>
+                                                <li>ERP - Winthor</li>
+                                            </ul>
+                                        </li>
+                                        <li>Visualizar – para conferir tudo</li>
+                                        <li>Salvar</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Salvar ficha de Faturamento, Implantação e proposta</h3>
+                    <ul>
+                        <li>Pasta
+                            <ul>
+                                <li>Implantação: Tudo que tem implantação e liberação de chave</li>
+                                <li>Faturamento: treinamento, CDU, customização</li>
+                            </ul>
+                        </li>
+                        <li>Criar pasta com código e nome do cliente </li>
+                        <li>Salvar ficha de implantação
+                            <ul>
+                                <li>Guia Pre faturamento</li>
+                                <li>Icone impressora abaixo do lado de salvar</li>
+                                <li>Imprimir ficha de implantação</li>
+                                <li>Salvar na pasta Z:\Administrativo\FATURAMENTO Criar </li>
+                            </ul>
+                        </li>
+                        <li>Salvar ficha de Faturamento
+                            <ul>
+                                <li>Guia Pre faturamento</li>
+                                <li>Icone da impressora da esquerda</li>
+                                <li>Salvar na pasta Z:\Administrativo\FATURAMENTO Criar </li>
+                            </ul>
+                        </li>
+                        <li>Salvar proposta</li>
+                        <li>Ao salvar os arquivos na pasta do cliente, colocar nome conforme exemplo:
+                            <ul>
+                                <li>Exemplo: 03268 - 2024 12 30 – Implantação (Código – Data em inglês – Implantação)
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="processo">
+                    <h3>Colocar na pasta de clientes</h3>
+                    <ul>
+                        <li>Copiar ficha de faturamento e proposta para a pasta : Z:\Comercial-Adm\007 - Controle de
+                            clientes\001 - Arquivo Digital - Clientes Máxima</li>
+                    </ul>
+                </div>
+
+
+                <div class="processo">
+                    <h3>Cadastrar cliente no Jira</h3>
+                    <ul>
+                        <li class="links-botoes">
+                            <a target="_blank" href="https://suporte.maximatech.com.br/secure/Dashboard.jspa">Jira</a>
+                        </li>
+                        <li>Seleciona o produto</li>
+                        <li>Para o novo cadastro: Adiciona organização
+                            <ul>
+                                <li>0 + codigo do cliente – Razão Social</li>
+                                <li>Depois clica abaixo em novo</li>
+                            </ul>
+                        </li>
+                        <li>Adicionar organização nos demais produtos</li>
+
+                    </ul>
+                </div>
+
+
+                <div class="processo">
+                    <h3>No Hubspot – Anexar ficha e comenta e ganha</h3>
+                    <ul>
+                        <li>Responder card, marcar Fabiana, com informaçoes do faturamento: Ex:</li>
+                        <textarea readonly id="8" rows="7" class="output-texto">
+                    Segue ficha de implantação
+                    
+                    2804 - OPTIMI S/A
+
+                    MaxInsight  1 usu  R$ 0,00
+
+                    ERP: WINTHOR
+
+                    Responsável: Vinicius Faria  - vinicius.faria@stoatacadista.com.br / 61 9644-3738
+
+                    Motivo: Proposta com validade de 06 meses. Condição é devido a Máxima não atender o relatório de acompanhamento de produtividade dos vendedores. Se a Máxima passar a atender o relatório a gratuidade da mensalidade será suspensa. Proposta com custo zero autorizada por Bruno Simião e Thiago Melo
+                    Upgrade sem diferença na mensalidade
+
+                    Inside: Nome
+                    </textarea>
+                        <button onclick="copiar('8')" class="botao_ação">Copiar</button>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>No Nectar: mover card</h3>
+                    <ul>
+                        <li>Move para ganha quando não gera contrato</li>
+                        <li>Mover card para contrato enviado quando é gerado o contrato</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Preencher planilhas</h3>
+                    <ul>
+                        <li class="links-botoes">
+                            <a target="_blank"
+                                href="https://maximasistemas.sharepoint.com/:x:/r/sites/GA-AdministrativoFinanceiro/_layouts/15/Doc.aspx?sourcedoc=%7B9040AEA7-51EE-43C5-B26A-A3846BD15DD6%7D&file=Planilhas%20de%20controle%20-%20Comiss%C3%A3o%20_%20Chave%20_%20SMS%20(2).xlsx&action=default&mobileredirect=true">Planilhas
+                                de controle - Comissão / Chave / SMS</a>
+                        </li>
+                        <br>
+                        <li>Quando for upgrade colocar R$ 0,00 na mensalidade caso nao haja alteração na mensalidade,
+                            caso tenha aumento colocar somente o valor que aumentou</li>
+                        <li>Quando upgrade inserir antes do nome produto "upgrade"</li>
+                        <br>
+                        <li class="links-botoes">
+                            <a target="_blank"
+                                href="https://maximasistemas.sharepoint.com/:x:/r/sites/GA-AdministrativoFinanceiro/_layouts/15/Doc.aspx?sourcedoc=%7BD2E63EBC-678C-471B-9D8E-B811FE3B60C3%7D&file=PLANILHA%20VENDAS%202025.xlsx&action=default&mobileredirect=true">Planlilha
+                                vendas 2025</a>
+                        </li>
+                        <br>
+
+                        <li>Quando for upgrade colocar R$ 0,00 na mensalidade caso nao haja alteração na mensalidade,
+                            caso tenha aumento colocar somente o valor que aumentou</li>
+                        <li>Não colocar assessoria</li>
+                        <li>Demonstrador só preenche</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3 class="destaque">Somente cliente que tem produtos e está adiquirindo o Extrator</h3>
+                    <ul>
+                        <li>Colocar no drive
+                            <ul>
+                                <li>Drive: Faturamento Máxima</li>
+                                <li>Cria pasta com código e nome do cliente</li>
+                                <li>Copia Ficha de faturamento e Proposta e colar na pasta que criou</li>
+                            </ul>
+                        </li>
+                        <ul class="links-botoes">
+                            <a target="_blank"
+                                href="https://maximasistemas.sharepoint.com/sites/GA-AdministrativoFinanceiro/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FGA%2DAdministrativoFinanceiro%2FDocumentos%20Compartilhados%2FFaturamento%20Maxima&viewid=bd743005%2Da8bf%2D4e55%2Dbda2%2Dcd077e329eed">Faturamento
+                                Máxima</a>
+                        </ul>
+                        <li>9703 - Tirar o suspenso</li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+            <div class="processos" id="pre-faturamento-cli-novo">
+                <h2>Pré faturamento – Cliente novo</h2>
+
+
+                <div class="processo">
+                    <h3>Hubspot: baixar proposta e verificar formulário</h3>
+                    <ul>
+                        <li>Oportunidades</li>
+                        <li>Pré-Faturamento</li>
+                        <li>Começa pelo último</li>
+                        <li>Clicar 2 vezes par abrir</li>
+                        <li>Clica no clipe para abrir a proposta</li>
+                        <li>Baixa a proposta</li>
+                        <li>Confere os valores lançados, se está assinado (máxima e cliente), copia o cnpj, tem o Cnpj,
+                            prazo de prestação de serviços (item 2)</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>9703</h3>
+                    <ul>
+                        <li>
+                            <a class="codigo" target="_blank" href="/codigos-pre-faturamento.html#codigos">
+                                Acessar página de códigos</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>Novo cliente
+                            <ul>
+
+                                <li>Digita CNPJ</li>
+                                <li>Consultar</li>
+                                <li>Incluir formulário</li>
+                                <li>Nome fantasia se estiver em branco preencher</li>
+                                <li>Cliente principal: codigo de grupo se for grupo, quando não repetir o codigo</li>
+                                <li>E-Mail de NFE: Check list no netcar</li>
+                                <li>Inscrição estadual: Check list no netcar</li>
+                                <li>Situação: Ativo</li>
+                            </ul>
+                        </li>
+
+                        <li>Guia dados do cliente:
+                            <ul>
+                                <li>ERP conforme formulário de checkmate no Nectar
+                                <li>Vendedor: olhar na proposta
+                                <li>Praça: Pesquisar o nome da cidade/estado
+                                <li>Ramo de atividade: 1
+                                <li>Cidade do IGBE: conforme cidade do cliente
+                                <li>Endereço de cobrança: clicar “...” para copiar endereço
+                            </ul>
+                        </li>
+
+                        <li>Guia contatos
+                            <ul>
+                                <li>Preencher conforme formulário de checkmate no Hubspote inclui (pode ser mais de 01
+                                    caso
+                                    tenha)</li>
+                                <li>Tipo de contato: 5</li>
+                                <li class="destaque">Tipo de contato: 8 - Para recebimentos de boletos</li>
+                                <li>Salva e copia o código do cliente</li>
+                            </ul>
+                        </li>
+
+                        <li>Na guia posição financeira:
+                            <ul>
+                                <li>Filial: 1</li>
+                                <li>cobrança: Bics </li>
+                            </ul>
+                        </li>
+
+                        <li>Guia produtos - Tipo Pontual
+                            <ul>
+                                <li>Exclui tudo</li>
+                                <li>Produto: Colocar conforme proposta</li>
+                                <li>
+                                    <ul>
+                                        <li>4803 - SETUP- ATIVACAO E TREINAMENTO- SAAS - MAXPROMOTOR</li>
+                                        <li>100024 - SERVICO: ASSESSORIA PERSONALIZADA VIA CONSULTOR</li>
+                                    </ul>
+                                </li>
+                                <li>Situação: Faturamento ou Bonificado</li>
+                                <li>Serviço: ver proposta
+                                    <ul>
+                                        <li>Setup: Implantação</li>
+                                        <li>Serviço de assessoria: Implantação</li>
+                                    </ul>
+                                </li>
+                                <li>Implantação: Sim para os casos já listados acima</li>
+                                <li>Incluir</li>
+                                <li>Obs:</li>
+                            </ul>
+                        </li>
+
+                        <li>Guia de Lançamento de contrato mensal
+                            <ul>
+                                <li>Seleciona produto</li>
+                                <li>Valor mensalidade</li>
+                                <li>Dia de vencimento</li>
+                                <li>Data de início – próximo faturamento – ver proposta</li>
+                                <li>Recorrente: sim</li>
+                                <li class="destaque">Paga comissão: sim</li>
+                                <li>Data final: +1 ano – verificar na proposta se é 1 ano</li>
+                                <li>RCA: Vendedor</li>
+                                <li>Comissão:
+                                    <ul>100%: proposta de 12 meses</ul>
+                                    <ul>50%: proposta de 6 meses</ul>
+                                </li>
+                                <li>Quantidade de usuários
+                                <li>Tipo de contrato: geralmente anual - verificar na proposta se é 1 ano</li>
+                                <li>Incluir</li>
+                                <li class="destaque">Marca o campo suspenso</li>
+                                <li>Salvar</li>
+                            </ul>
+                        </li>
+
+                        <li>Guia Contatos – Verifica se responsável está cadastrado, se não cadastrar
+                            <ul>
+                                <li>Nome do responsável pela compra: ver proposta</li>
+                                <li>Cargo: Geralmente – TI</li>
+                                <li>Tipo de contato: 5</li>
+                                <li class="destaque">Tipo de contato: 8 - Para recebimentos de boletos</li>
+                                <li>Salva e entra novamente</li>
+                            </ul>
+                        </li>
+
+
+                        <li>Guia Pré-Faturamento
+                            <ul>
+                                <li>Incluir</li>
+                                <li>Responsável pela venda – conforme proposta – (nome + Inside)</li>
+                                <li>Responsável pela compra – ver proposta</li>
+                                <li>Data da venda: data do dia que está fazendo o Pré-faturamento</li>
+                                <li>Guia Produto: Insere o produto: pontual
+                                    <ul>
+                                        <li>Obs: Sempre que tiver migração lançar como setup
+                                            <ul>
+                                                Ex: proposta Migração - Setup - Ativação e Treinamento - SaaS –
+                                                maxPedido
+                                                Na Guia produtos pre faturamento: SETUP – ATIVAÇÃO E TREINAMENTO SASS –
+                                                NOME
+                                                DO PRODUTO
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>Guia Suporte: Insere o produto: somente Licença de usuário mensal
+                                    <ul>
+                                        <li>Vencimento de acordo com próximo faturamento ou como na proposta</li>
+                                        <li>o Obs: Sempre que tiver migração lançar o nome do produto normal
+                                            <ul>
+                                                <li>Ex: proposta Migração - Licença de uso mensal maxPedido Cloud
+                                                    Na Guia Suporte pre faturamento: Licença de uso mensal MaxPedido
+                                                    Cloud
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>Guia Comissão:
+                                    <ul>
+                                        <li>No Hubspotolhar a validação nos campos da laterar esquerda</li>
+                                        <li>Gerente de negócio: inserir vendedor da proposta
+                                            <ul>5% quando não tiver demonstrador</ul>
+                                            <ul>3,5% quando tiver demonstrador</ul>
+                                            <ul>5% quando for usuarios adicionais</ul>
+                                        </li>
+                                        <li>No Hubspotolhar a validação nos campos da laterar esquerda</li>
+                                        <li>Demonstrador: 2% (NOME + DEMO)</li>
+                                        <li>Inbound: 1,5%</li>
+                                        <li>Outbound: 2,5%</li>
+                                        <li>Origem CustomerCare - CC: 2,5%</li>
+                                        li>100% Máxima: 1,5% - Base // 3% - Novo // 1% - Capacitação/treinamento</li>
+                                        <li>Parceiro: 15%</li>
+                                        <li>Apoio técnico: 1%</li>
+                                        <li>Closer: 2%</li>
+                                        <li>Ana Paula - 1,5%</li>
+                                        <li>Indicação - Indicação Interna - Inside Sales - Participante - 2%</li>
+
+                                        <li>Rotina 517 para verificar os participantes da venda
+                                            <ul>
+                                                <li>RCA – para pesquisar</li>
+                                                <li>Guia Resultado de pesquisa
+                                                    <ul>
+                                                        <li>clica em código rca para classificar e ver o próximo código
+                                                            de cadastro
+                                                        </li>
+                                                        <li>Pesquisa um semelhante primeiro. Ex: Parceiro, demo, ou
+                                                            Máxima 100%.
+                                                            Verifica na Guia Numeradores o número no campo Próximo Cod
+                                                            Cli</li>
+                                                    </ul>
+                                                </li>
+
+                                                <li>Incluir: nome, cpf, rg, marca pessoa física, supervisor sempre 3,
+                                                    dados bancário
+                                                    quando parceiro, guia numeradores conforme consultado anteriormente,
+                                                    guia
+                                                    vendas/comissões: tipo de venda sempre interna. INSS sempre 0.</li>
+                                                <li>Quando tiver cadastro em uma categoria, ir no cadastro e pegar nome,
+                                                    cpf e rg
+                                                    para novo cadastro</li>
+                                                <li>Inserir registro: supervisor sempre 3</li>
+                                                <li>Guia numeradores preencher ultimo campo – 10 – Verificar cadastro
+                                                    semelhante da
+                                                    mesma categoria para ver numero a preench</li>
+                                                <li>Venda Interna
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                        <li>Guia pagamento: tipo pontual</li>
+                        <li>Insere observação da proposta.
+                            <ul>
+                                <li>Quando Upgrade: Upgrade MaxPedido - Sem diferença de mensalidade</li>
+                                <li>Se for proposta de prazo de 6 meses inserir tambem: Proposta com validade de 06
+                                    meses.
+                                </li>
+                                <li>ERP - Winthor</li>
+                            </ul>
+                        </li>
+                        <li>Visualizar – para conferir tudo</li>
+                        <li>Salvar</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Salvar ficha de Faturamento, Implantação e proposta </h3>
+                    <ul>
+                        <li>Pasta
+                            <ul>
+                                <li>Implantação: Tudo que tem implantação e liberação de chave</li>
+                                <li>Faturamento: treinamento, CDU, customização</li>
+                            </ul>
+                        </li>
+                        <li>Criar pasta com código e nome do cliente </li>
+                        <li> Salvar ficha de implantação
+                            <ul>
+                                <li>Guia Pre faturamento</li>
+                                <li>Icone impressora abaixo do lado de salvar</li>
+                                <li>Imprimir ficha de implantação</li>
+                                <li>Salvar na pasta Z:\Administrativo\FATURAMENTO Criar</li>
+                            </ul>
+                        </li>
+                        <li>Salvar ficha de Faturamento
+                            <ul>
+                                <li>Guia Pre faturamento</li>
+                                <li>Icone da impressora da esquerda</li>
+                                <li>Salvar na pasta Z:\Administrativo\FATURAMENTO Criar</li>
+                            </ul>
+                        </li>
+                        <li>Salvar proposta</li>
+                        <li>Ao salvar os arquivos na pasta do cliente, colocar nome conforme exemplo:
+                            <ul>
+                                Exemplo: 03268 - 2024 12 30 – Implantação (Código – Data em inglês – Implantação)
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Colocar na pasta de clientes</h3>
+                    <ul>
+                        <li>Copiar ficha de faturamento e proposta para a pasta : Z:\Comercial-Adm\007 - Controle de
+                            clientes\001 - Arquivo Digital - Clientes Máxima</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Cadastrar cliente no Jira</h3>
+                    <ul>
+                        <li class="links-botoes">
+                            <a target="_blank" href="https://suporte.maximatech.com.br/secure/Dashboard.jspa">Jira</a>
+                        </li>
+                        <li>Seleciona o produto</li>
+                        <li>Para o novo cadastro: Adiciona organização
+                            <ul>
+                                <li>0 + codigo do cliente – Razão Social</li>
+                                <li>Depois clica abaixo em novo</li>
+                            </ul>
+                        </li>
+                        <li>Adicionar organização nos demais produtos</li>
+
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Painel financeiro</h3>
+                    <ul>
+                        <li class="links-botoes">
+                            <a target="_blank"
+                                href="https://faturamento.maximasistemas.com.br/Administrativo/Default.aspx">Painel
+                                Financeiro</a>
+                        </li>
+                        <li>Busca o cliente</li>
+                        <li>Clica em editar</li>
+                        <li>No nome do cliente insere o novo código</li>
+                        <li>Clientes em associados
+                            <ul>
+                                <li>Banco Máxima</li>
+                                <li>Código do cliente novo</li>
+                                <li>Adicionar</li>
+                            </ul>
+                        </li>
+                        <li>Salvar</li>
+                        <li>Ok</li>
+
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Preencher planilhas</h3>
+                    <ul>
+                        <li>Acessar Planilhas de controle - Comissão / Chave / SMS
+                            <ul>
+                                <li class="links-botoes">
+                                    <a target="_blank"
+                                        href="https://maximasistemas.sharepoint.com/:x:/r/sites/GA-AdministrativoFinanceiro/_layouts/15/Doc.aspx?sourcedoc=%7B9040AEA7-51EE-43C5-B26A-A3846BD15DD6%7D&file=Planilhas%20de%20controle%20-%20Comiss%C3%A3o%20_%20Chave%20_%20SMS%20(2).xlsx&action=default&mobileredirect=true">Planilhas
+                                        de controle - Comissão / Chave / SMS</a>
+                                </li>
+                                <li>Lança somente as mensalidadesL</li>
+                                <li>São 2 guias chave e de SMS</li>
+                                <li>Na coluna "Mês Pagto Comissão", colocar o mês anterior da data de início da
+                                    mensalidade</li>
+                            </ul>
+                        </li>
+                        <li>Acessar Planilhas vendas
+                            <ul>
+                                <li class="links-botoes">
+                                    <a target="_blank"
+                                        href="https://maximasistemas.sharepoint.com/:x:/r/sites/GA-AdministrativoFinanceiro/_layouts/15/Doc.aspx?sourcedoc=%7BD2E63EBC-678C-471B-9D8E-B811FE3B60C3%7D&file=PLANILHA%20VENDAS%202025.xlsx&action=default&mobileredirect=true">Planlilha
+                                        vendas 2025</a>
+                                </li>
+                                <li>Não colocar assessoria</li>
+                                <li>Demonstrador preenche somente no Setup</li>
+
+                            </ul>
+                        </li>
+                        <li>Planilha de contratos
+                            <ul>
+                                <li class="links-botoes">
+                                    <a target="_blank"
+                                        href="https://maximasistemas.sharepoint.com/:x:/r/sites/GA-AdministrativoFinanceiro/_layouts/15/Doc.aspx?sourcedoc=%7BBAEDF743-0EE1-47D1-8BA2-3175DD148D2B%7D&file=Acompanhamento%20de%20contratos%20-%20Novos%20clientes.xlsx&action=default&mobileredirect=true">Planilha
+                                        de Contratos</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="processo">
+                    <h3>Enviar contrato</h3>
+                    <ul>
+                        <li class="links-botoes">
+                            <a href="https://web.docsales.com/" target="_blank">Doc Sales</a>
+                        </li>
+                        <li>Z:\Administrativo\ADM-FIN\CONTRATOS\MAXIMA\CONTRATOS CLIENTES NOVOS</li>
+                        <li>Preencher lista para mala direta</li>
+                        <li>MINUTA CONTRATO MAXIMATECH atualizada.
+                            <ul>
+                                <li>Na aba correspondências, no campo codigo passar para próximo e verificar os dados do
+                                    cliente ficou certo.</li>
+                                <li>Atualizar a data no final do contrato</li>
+                                <li>Vai em aquivo / Exportar / Criar documento PDF</li>
+                                <li>Salvar o nome como: + codigo do cliente – Razão social</li>
+                            </ul>
+                        </li>
+                        <li>Docsales
+                            <ul>
+                                <li>Novo documento</li>
+                                <li>Docsales -eSign</li>
+                                <li>Seleciona o PDF</li>
+                                <li>Em signatários:
+                                    <ul>
+                                        <li>Rodrigo Susanna / rodrigo.susanna@maximatech.com.br / assinar como
+                                            contratada</li>
+                                        <li>Rafael Martins / rafael@maximatech.com.br / assinar como
+                                            contratada</li>
+                                        <li>cliente como contratante</li>
+                                        <li>testemunha como parte</li>
+
+                                        <li>Bruno Simião Araújo - bruno.araujo@maximatech.com.br / testemunha como parte
+                                            //
+                                            Aditivos de negociação feito pelo Bruno</li>
+                                    </ul>
+                                </li>
+                                <li>Enviar para assinatura</li>
+
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>No Hubspot – Criar comentário </h3>
+                    <ul>
+                        <li>Responder card, marcar Fabiana, com informaçoes do faturamento: Ex:</li>
+                        <textarea readonly id="8" rows="7" class="output-texto">
+                            3557 - INDUSTRIA E COMERCIO DE PESCADOS LTDA
+
+                            MAXGESTAO PLUS CLOUD - 10 usu - R$ 1030,00
+                            MAXPEDIDO CLOUD - 41 usu - R$ 2829,00
+                            MAXPROMOTOR CLOUD - 10 usu - R$ 540,00
+                            ROTEIRIZADOR DE VENDEDORES RCA - CLOUD - até 15.000pdv/mês - R$ 356,00
+
+                            ERP: PROTHEUS
+
+                            Responsável: JOÃO FERREIRA - joao@noronhapescados.com.br
+
+                            Inside:
+
+                            Observação: so quanto for algo referente a implantação
+
+                            
+
+                    </textarea>
+                        <button onclick="copiar('9')" class="botao_ação">Copiar</button>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>No Nectar: mover card para contrato enviado </h3>
+                </div>
+
+            </div>
+
+            <div class="processos" id="pre-faturamento-troca-cnpj">
+                <h2>Pré faturamento – Troca Cnpj</h2>
+
+
+                <div class="processo">
+                    <h3>Hubspot: baixar proposta e verificar formulário</h3>
+                    <ul>
+                        <li>Oportunidades</li>
+                        <li>Pré-Faturamento</li>
+                        <li>Começa pelo último</li>
+                        <li>Clicar 2 vezes par abrir</li>
+                        <li>Clica no clipe para abrir a proposta</li>
+                        <li>Baixa a proposta</li>
+                        <li>Confere os valores lançados, se está assinado (máxima e cliente), copia o cnpj, tem o Cnpj,
+                            prazo de prestação de serviços (item 2)</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>9703</h3>
+                    <ul>
+                        <li>Novo cliente
+                            <ul>
+                                <li>Digita CNPJ</li>
+                                <li>Consultar</li>
+                                <li>Incluir formulário</li>
+                                <li>Nome fantasia se estiver em branco preencher</li>
+                                <li>Cliente principal: colocar o novo cliente nos dois cadastros</li>
+                                <li>E-Mail de NFE: copiar do cadastro antigo para o novo</li>
+                                <li>Inscrição estadual: Check list no netcar</li>
+                                <li>Situação: Ativo</li>
+                            </ul>
+                        </li>
+
+                        <li>Guia dados do cliente:
+                            <ul>
+                                <li>ERP conforme formulário de checkmate no Nectar
+                                <li>Vendedor: olhar na proposta
+                                <li>Praça: Pesquisar o nome da cidade/estado
+                                <li>Ramo de atividade: 1
+                                <li>Cidade do IGBE: conforme cidade do cliente
+                                <li>Endereço de cobrança: clicar “...” para copiar endereço
+                            </ul>
+                        </li>
+
+                        <li>Guia contatos
+                            <ul>
+                                <li>Copia mesmos contatos do cadastro antigo</li>
+                                <li>Salva e copia o código do cliente</li>
+                            </ul>
+                        </li>
+
+                        <li>Na guia posição financeira:
+                            <ul>
+                                <li>Posição financeira: copiar do cadastro antigo para o novo, geralmente é:</li>
+                                <ul>
+                                    <li>Filial: 1</li>
+                                    <li>cobrança: Bics </li>
+                                </ul>
+                            </ul>
+                        </li>
+
+                        <li>Guia produtos - Tipo Pontual
+                            <ul>
+                                <li>Exclui tudo</li>
+                                <li>Colocar conforme proposta:</li>
+                                <ul>
+                                    <li>Alteração de CNPJ MaxPedido (MaxPedido, MaxGestão, MaxCatalogo)</li>
+                                </ul>
+                                <li>Situação: Bonificado</li>
+                                <li>Serviço: Licença de uso</li>
+                                <li>Implantação: sim</li>
+                                <li>Incluir</li>
+                                <li>Obs:</li>
+                            </ul>
+                        </li>
+
+                        <li>Guia de Lançamento de contrato mensal
+                            <ul>
+                                <li>Copia os itens ativos do cadastro antigo para o novo</li>
+                                <ul>
+                                    <li>Seleciona produto</li>
+                                    <li>Valor mensalidade</li>
+                                    <li>Dia de vencimento</li>
+                                    <li>Data de início</li>
+                                    <li>Recorrente: sim</li>
+                                    <li>Paga comissão: não</li>
+                                    <li>Data final:</li>
+                                    <li>RCA: Vendedor</li>
+                                    <li>Quantidade de usuários
+                                    <li>Tipo de contrato: geralmente anual - verificar na proposta se é 1 ano</li>
+                                    <li>Incluir</li>
+                                    <li>Salvar</li>
+                                </ul>
+                                <li>Após copiar excluir os produtos ativos do cadastro antigo copiados para o cadastro
+                                    novo</li>
+                                <li>Colocar cliente antigo como inativo caso não fique nenhum produto ativo</li>
+                                <li>Ticket de salvar</li>
+                                <li>Salvar</li>
+                            </ul>
+                        </li>
+
+                        <li>Guia Contatos – Verifica se responsável está cadastrado, se não cadastrar
+                            <ul>
+                                <li>Nome do responsável pela compra: ver proposta</li>
+                                <li>Cargo: Geralmente – TI</li>
+                                <li>Tipo de contato: 5</li>
+                                <li class="destaque">Tipo de contato: 8 - Para recebimentos de boletos</li>
+                                <li>Salva e entra novamente</li>
+                            </ul>
+                        </li>
+
+                        <li>Guia Pré-Faturamento
+                            <ul>
+                                <li>Incluir</li>
+                                <li>Responsável pela venda – 646 -Ana Paula</li>
+                                <li>Responsável pela compra – ver proposta</li>
+                                <li>Data da venda: data do dia que está fazendo o Pré-faturamento</li>
+                                <li>Guia Produto: Insere o produto: Alteração de Cnpj</li>
+                                <li>Insere observação da proposta</li>
+                                <li>Visualizar – para conferir tudo</li>
+                                <li>Visualizar – para conferir tudo</li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Salvar ficha de Faturamento, Implantação e proposta </h3>
+                    <ul>
+                        <li>Pasta
+                            <ul>
+                                <li>Implantação: Tudo que tem implantação e liberação de chave</li>
+                                <li>Faturamento: treinamento, CDU, customização</li>
+                            </ul>
+                        </li>
+                        <li>Criar pasta com código e nome do cliente </li>
+                        <li> Salvar ficha de implantação
+                            <ul>
+                                <li>Guia Pre faturamento</li>
+                                <li>Icone impressora abaixo do lado de salvar</li>
+                                <li>Imprimir ficha de implantação</li>
+                                <li>Salvar na pasta Z:\Administrativo\FATURAMENTO Criar</li>
+                            </ul>
+                        </li>
+                        <li>Salvar ficha de Faturamento
+                            <ul>
+                                <li>Guia Pre faturamento</li>
+                                <li>Icone da impressora da esquerda</li>
+                                <li>Salvar na pasta Z:\Administrativo\FATURAMENTO Criar</li>
+                            </ul>
+                        </li>
+                        <li>Salvar proposta</li>
+                        <li>Ao salvar os arquivos na pasta do cliente, colocar nome conforme exemplo:
+                            <ul>
+                                Exemplo: 03268 - 2024 12 30 – Implantação (Código – Data em inglês – Implantação)
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Colocar na pasta de clientes</h3>
+                    <ul>
+                        <li>Copiar ficha de faturamento e proposta para a pasta : Z:\Comercial-Adm\007 - Controle de
+                            clientes\001 - Arquivo Digital - Clientes Máxima</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Colocar no drive</h3>
+                    <ul>
+                        <li>Drive: Faturamento Máxima</li>
+                        <li>Cria pasta com código e nome do cliente</li>
+                        <li>Copia Ficha de faturamento e Proposta e colar na pasta que criou</li>
+                    </ul>
+                    <ul class="links-botoes">
+                        <a target="_blank"
+                            href="https://maximasistemas.sharepoint.com/sites/GA-AdministrativoFinanceiro/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FGA%2DAdministrativoFinanceiro%2FDocumentos%20Compartilhados%2FFaturamento%20Maxima&viewid=bd743005%2Da8bf%2D4e55%2Dbda2%2Dcd077e329eed">Faturamento
+                            Máxima</a>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Cadastrar cliente no Jira</h3>
+                    <ul>
+                        <li>Abre dois Jiras</li>
+                        <li>Seleciona o produto</li>
+                        <li>Para o novo cadastro: Adiciona organização
+                            <ul>
+                                <li>0 + codigo do cliente – Razão Social</li>
+                                <li>Depois clica abaixo em novo</li>
+                            </ul>
+                        </li>
+                        <li>Copia os endereços de email para o novo codigo</li>
+                        <li>Adicionar organização nos demais produtos</li>
+                        <li>Para o codigo antigo remover do projeto</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Painel financeiro</h3>
+                    <ul>
+                        <li>Busca o cliente</li>
+                        <li>Clica em editar</li>
+                        <li>No nome do cliente insere o novo código</li>
+                        <li>Clientes em associados
+                            <ul>
+                                <li>Banco Máxima</li>
+                                <li>Código do cliente novo</li>
+                                <li>Adicionar</li>
+                            </ul>
+                        </li>
+                        <li>Salvar</li>
+                        <li>Ok</li>
+
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Enviar contrato</h3>
+                    <ul>
+                        <li>Z:\Administrativo\ADM-FIN\CONTRATOS\MAXIMA\CONTRATOS CLIENTES NOVOS</li>
+                        <li>Preencher lista para mala direta</li>
+                        <li>MINUTA CONTRATO MAXIMATECH atualizada.
+                            <ul>
+                                <li>Na aba correspondências, no campo codigo passar para próximo e verificar os dados do
+                                    cliente ficou certo.</li>
+                                <li>Atualizar a data no final do contrato</li>
+                                <li>Vai em aquivo / Exportar / Criar documento PDF</li>
+                                <li>Salvar o nome como: + codigo do cliente – Razão social</li>
+                            </ul>
+                        </li>
+                        <li>Docsales
+                            <ul>
+                                <li>Novo documento</li>
+                                <li>Docsales -eSign</li>
+                                <li>Seleciona o PDF</li>
+                                <li>Em signatários:
+                                    <ul>
+                                        <li>RODRIGO SUSANNA / rodrigo.susanna@maximatech.com.br / assinar como
+                                            contratada</li>
+                                        <li>Rafael Martins / rafael@maximatech.com.br / assinar como
+                                            contratada</li>
+                                        <li>cliente como contratante</li>
+                                    </ul>
+                                </li>
+                                <li>Enviar para assinatura</li>
+                                <li>Preencher planilha de contratos
+                                    <ul>
+                                        <li class="links-botoes">
+                                            <a target="_blank"
+                                                href="https://maximasistemas.sharepoint.com/:x:/r/sites/GA-AdministrativoFinanceiro/_layouts/15/Doc.aspx?sourcedoc=%7BBAEDF743-0EE1-47D1-8BA2-3175DD148D2B%7D&file=Acompanhamento%20de%20contratos%20-%20Novos%20clientes.xlsx&action=default&mobileredirect=true">Planilha
+                                                de Contratos</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>No Hubspot – Anexar ficha e comenta</h3>
+                    <ul>
+                        <li>Responder card, marcar Fabiana, com informaçoes do faturamento: Ex:</li>
+                        <textarea readonly id="8" rows="7" class="output-texto">
+                            Segue ficha de implantaçã
+                           
+                            3518 - MANA PRODUTOS ALIMENTICIOS E ATACADO LTDA
+                           
+                            Alteração de Cnpj Somente para faturamento
+                            
+                            ERP: WINTHOR
+                            
+                            Responsável: MOADIR BARBOSA DE SOUSA JUNIOR - contasapagar@grupomanaa.com.br
+                            
+                            Motivo: A alteração será do CNPJ 21.035.108/0001-90 - MANA PRODUTOS ALIMENTICIOS LTDA (3142) para o
+                            CNPJ 49.323.217/0001-21 - MANÁ PRODUTOS ALIMENTICIOS E ATACADO (3518)
+                        </textarea>
+                        <button onclick="copiar('9')" class="botao_ação">Copiar</button>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>No Nectar: mover card para contrato ganha</h3>
+                </div>
+
+                <div class="processo">
+                    <h3>1214 – Inserir mensagem</h3>
+                    <ul>
+                        <li>Cadastro antigo: Alteração de Cnpj para faturamento, codigo novo 3518</li>
+                        <li>Cadastro novo: Alteração de Cnpj para faturamento, codigo antigo 3142</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Nuvem</h3>
+                    <ul>
+                        <li>Colocar na razão do cliente: (codigo novo xxx)</li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3>Responder e-mail da solicitação</h3>
+                </div>
+
+
+            </div>
+
+            <div class="processos" id="">
+                <h2>teste</h2>
+
+
+                <div class="processo">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="processos" id="">
+                <h2>teste</h2>
+
+
+                <div class="processo">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="processo">
+                    <h3></h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                2024 &copy, MAXIMA TECH - Todos os direitos reservados. Desenvolvido por Sidney Rodrigues Magalhães
+            </p>
+        </div>
+    </footer>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="./js/image-card.js"></script>
+    <script src="./js/copiar.js"></script>
+</body>
+
+</html>

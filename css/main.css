@@ -1,0 +1,156 @@
+main {
+    font-family: "Ubuntu", serif;
+    background-color: #131e2d;
+    color: white;
+}
+
+body {
+    font-family: "Ubuntu", serif;
+    background-color: #131e2d;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main h1 {
+    font-family: "Bungee", sans-serif;
+    color: #fff;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+main h2 {
+    font-family: "Bungee", sans-serif;
+    color: #fff;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 2rem;
+    background-color: black;
+    padding: 1rem;
+}
+
+main h3 {
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 1.5rem;
+    color: #bafffd;
+}
+
+main ul {
+    padding-left: 60px;
+}
+
+main li {
+    padding-left: 0; 
+    list-style: circle;
+    font-size: 1rem;
+}
+
+
+h4 {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+h5,
+label {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    
+}
+
+p {
+    font-weight: 200;
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+ul {
+    margin: 2px 0;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.processos {
+    padding-top: 4rem;
+}
+
+
+.textarea {
+    max-width: 100%;
+}
+
+.output-texto {
+    width: 90%;
+    font-size: 1rem;
+    color:  #131e2d;
+    background:  #5d94e2;
+    outline: 0;
+    display: block;
+    padding: 5px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border: 1px solid ;
+    background-color:  #fafafa;
+    display: flex;
+    white-space: pre-line
+    /* text-indent: 0; */
+}  
+
+.menor {
+    width: 50%;
+}
+
+.ul-caixa-texto,
+.li-caixa-texto {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.destaque {
+    color: #03f738
+}
+
+/* a,
+button {
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: #c4e1f5;
+} */
+
+a:hover,
+button:hover {
+    background-color: #131e2d;
+    color: white;
+}
+
+/* .links-botoes {
+    gap: 20px;
+    display: flex;
+    margin: 10px 0;
+} */
+
+.codigo, a {
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #00b853;
+}
+
+.codigo:hover, a:hover {
+background-color: #8eefb9;
+    color: black;
+}

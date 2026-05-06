@@ -1,0 +1,26 @@
+.navbar-nav,
+.nav-link.active  {
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+    font-weight: 600;
+}
+
+.navbar-custom {
+    background: linear-gradient(90deg, #0060dd, #010101);
+    color: white;
+}
+
+.text-decoration-none {
+    font-family: "Bungee", sans-serif;
+}
+
+header {
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
